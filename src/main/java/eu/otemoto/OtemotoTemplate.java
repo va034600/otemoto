@@ -1,4 +1,4 @@
-package eu.nanairo.orm;
+package eu.otemoto;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 
-public class NanairoTemplate {
+public class OtemotoTemplate {
 	/***/
 	private SQLiteDatabase db;
 

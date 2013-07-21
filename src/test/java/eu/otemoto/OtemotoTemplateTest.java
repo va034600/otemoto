@@ -1,10 +1,11 @@
-package eu.nanairo.orm;
+package eu.otemoto;
 
+import eu.otemoto.OtemotoTemplate;
 import junit.framework.TestCase;
 
-public class NanairoTemplateTest extends TestCase {
+public class OtemotoTemplateTest extends TestCase {
 	public void testConvertColumns_01() {
-		String[] columns = NanairoTemplate.convertColumns(SampleNewEntity.class);
+		String[] columns = OtemotoTemplate.convertColumns(SampleNewEntity.class);
 		assertNotNull(columns[0]);
 		assertEquals("ID", columns[0]);
 		assertEquals("TITLE", columns[1]);
@@ -15,12 +16,12 @@ public class NanairoTemplateTest extends TestCase {
 		SampleNewEntity sampleEntity = new SampleNewEntity();
 		sampleEntity.setId(3L);
 		sampleEntity.setNewOldTitle("abc");
-		String sql = NanairoTemplate.getSqlForInsert(SampleNewEntity.class, sampleEntity);
+		String sql = OtemotoTemplate.getSqlForInsert(SampleNewEntity.class, sampleEntity);
 		assertEquals("INSERT INTO SAMPLE_NEW (ID, NEW_OLD_TITLE) VALUES (?, ?)", sql);
 	}
 
 	public void testGetTableName_01() {
-		String tableName = NanairoTemplate.getTableName(SampleNewEntity.class);
+		String tableName = OtemotoTemplate.getTableName(SampleNewEntity.class);
 		assertEquals("SAMPLE_NEW", tableName);
 	}
 

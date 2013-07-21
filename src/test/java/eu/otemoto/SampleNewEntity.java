@@ -1,4 +1,4 @@
-package eu.nanairo.orm;
+package eu.otemoto;
 
 /**
  * 
