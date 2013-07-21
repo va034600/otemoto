@@ -1,0 +1,7 @@
+target
+bin
+gen
+.*
+!.gitignore
+!.travis.yml
+**/.DS_Store
