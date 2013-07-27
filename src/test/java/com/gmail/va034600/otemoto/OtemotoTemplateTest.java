@@ -1,6 +1,5 @@
-package eu.otemoto;
+package com.gmail.va034600.otemoto;
 
-import eu.otemoto.OtemotoTemplate;
 import junit.framework.TestCase;
 
 public class OtemotoTemplateTest extends TestCase {

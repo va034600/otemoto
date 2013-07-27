@@ -1,4 +1,4 @@
-package eu.otemoto;
+package com.gmail.va034600.otemoto;
 
 import android.database.sqlite.SQLiteDatabase;
 
