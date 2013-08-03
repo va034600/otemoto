@@ -4,7 +4,7 @@ otemoto
 
 android用ORM(Object-relational mapping)
 
-開発環境
-	eclipse
-		m2e-android
-		m2eclipse
+#開発環境
+##eclipse
+* m2e-android
+* m2eclipse
